@@ -5,12 +5,12 @@ Numeric code for experimental subject. There were 30 subjects, so the range of v
 ##activity
 A character (factor) variable describing the activity the subject was engaged in when the measurements were taken. Possible values:
 
-*LAYING
-*SITTING
-*STANDING
-*WALKING
-*WALKING_DOWNSTAIRS
-*WALKING_UPSTAIRS
+* LAYING
+* SITTING
+* STANDING
+* WALKING
+* WALKING_DOWNSTAIRS
+* WALKING_UPSTAIRS
 
 Anybody who is a human being has either engaged in or witnessed these activities, so the labels need no further explanation.
 
