@@ -27,23 +27,12 @@ The script 'run_analysis.R ultimately drops a text file named 'tidyfinal.txt' in
 
 When developing the script, at first a 'long' dataset was generated. In this set, one of the columns was a variable. The seemed to defy the 'each variable forms a column' property. Laying out the data so that each row specified an activity, a subject, and values for every variable made sense as a way to present the data in a 'tidy' manner. 
 
+To further support this, say you were trying to build a predictive model from this data. Functions like lm rely on variables being in columns as opposed to rows, so a dataset like this is more useful than the 'long' format.
+
+##The Code Book
+See the file 'CodeBook.md' for detailed information about the variables and their values.
+
 ##References
 Wickham, Hadley. Tidy Data. The Journal of Statistical Software
 
 
-
-Of appropriate formats for this assignment and all the formats that Coursera will accept, a good intersection of the two is a txt file made with write.table.
-
-Protip, if using write.table, set the option of not writing the line numbers as that can look a bit ugly when reading it back in
-
-wide1 <- tidied <- dcast(narrow, cyl + gear ~ vs, max)
-
-vs -> turned to columns
-
-notverywide <- aggregate(mpg ~ gear + vs + cyl, data = narrow, min)
-mpg is what's 'minned'
-
-In the submission box, as well as the link, put some accompanying text on another line something like "tidy data as per the ReadMe that can be read into R with read.table"
-In the readMe in explaining what the script does put "and then generates a tidy data text file that meets the principles of ...etc"
-the truly cunning may want to put in a citation to this discussion and/or Hadley's paper
-The codebook still has the specific description of the tidy data file contents (and you mention that it exists and it's role in the ReadMe)
